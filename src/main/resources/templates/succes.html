@@ -6,7 +6,7 @@
 </head>
 <body>
 <header>
-
+    <h1>For Mad'Resten</h1>
     <nav>
         <ul>
             <li><a href="index">Home</a></li>
@@ -15,12 +15,18 @@
         </ul>
     </nav>
     <hr>
-    <h1>For Mad'Resten</h1>
-    <h2>Succes</h2>
+
+    <h2>Succes☺</h2>
+    <p>Deres forslag er kommet på opslagstavlen.</p>
 </header>
-
-
-
+    <section id="dashboardposts">
+        <p th:text="${dashboardposts.getFirstname()}"></p>
+        <p th:text="${dashboardposts.getLastname()}"></p>
+        <p th:text="${dashboardposts.getEmail()}"></p>
+        <p th:text="${dashboardposts.getDate()}"></p>
+        <p th:text="${dashboardposts.getPostname()}"></p>
+        <p th:text="${dashboardposts.getPostarea()}"></p>
+    </section>
 
 
 

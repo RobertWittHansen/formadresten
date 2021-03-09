@@ -1,15 +1,20 @@
 package madkassen.formadresten.controller;
 
 
+import madkassen.formadresten.model.GetSetClass;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
+
 
 @Controller
 public class MyController
 {
+
+    ArrayList<GetSetClass> dashboard = new ArrayList<>();
     // Main site.
     @GetMapping("/index")
     public String index()
@@ -18,17 +23,17 @@ public class MyController
     }
 
     // Statisk info til bruger.
-    @GetMapping("/forbrugeren")
-    public String forbrugeren()
+    @GetMapping("/consumer")
+    public String consumer()
     {
-        return "forbrugeren";
+        return "consumer";
     }
 
     // Statisk info til bruger.
-    @GetMapping("/virksomhed")
-    public String virksomhed()
+    @GetMapping("/company")
+    public String company()
     {
-        return "virksomhed";
+        return "company";
     }
 
     // Statisk info til bruger.
@@ -38,8 +43,6 @@ public class MyController
         return "organisation";
     }
 
-
-
     // Koden til: profil, opslagstavlen.
     @GetMapping("/form")
     public String form()
@@ -48,12 +51,13 @@ public class MyController
     }
 
     // postmapping sender "dit" tavleopslag videre.
-    @PostMapping("/tavleopslag")
-    public String tavleopslag(@RequestParam("forNavn") String forNavn, @RequestParam("efterNavn") String efterNavn,
-                              @RequestParam("email") String email, @RequestParam("forslag") String forslag)
+    @PostMapping("/post")
+    public String post(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname,
+                       @RequestParam("email") String email, @RequestParam("date") String date,
+                       @RequestParam("postname") String postname, @RequestParam("postarea") String postarea)
     {
-
-
+        GetSetClass dashboardarray = new GetSetClass(firstname,lastname,email,postname,postarea);
+        dashboard.add(dashboardarray);
         return  "redirect:/succes";
     }
 
@@ -61,16 +65,14 @@ public class MyController
     @GetMapping("/succes")
     public String succes()
     {
-
-
         return "succes";
     }
 
 
-    // Selve opslaget.
-    @GetMapping("/opslagstavlen")
-    public String opslagstavlen()
+    // Selve opslagstavlen (dashboardet).
+    @GetMapping("/dashboard")
+    public String dashboard()
     {
-        return "opslagstavlen";
+        return "dashboard";
     }
 }

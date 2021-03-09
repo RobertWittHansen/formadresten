@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>opslagstavlen</title>
 </head>
 <body>
 <header>
+    <h1>For Mad'Resten</h1>
     <nav>
         <ul>
             <li><a href="index">Home</a></li>
@@ -14,11 +15,16 @@
         </ul>
     </nav>
     <hr>
-    <h1>For Mad'Resten</h1>
-    <h2>Forbrugeren</h2>
+
+    <h2>Opslagstavlen</h2>
 </header>
-
-
+<h2>Your dashboard</h2>
+<div th:each="event : ${events}">
+    <p th:text="${event.getPost()}"></p>
+    <p th:text="${event.getFirstname()}"></p>
+    <p th:text="${event.getLastname()}"></p>
+    <p th:text="${event.getDate()}"></p>
+    <p th:text="${event.getPost-name()}"></p>
 
 
 
