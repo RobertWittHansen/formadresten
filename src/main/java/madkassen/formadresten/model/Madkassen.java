@@ -2,8 +2,8 @@ package madkassen.formadresten.model;
 
 public class Madkassen
 {
-    private String firstName;
-    private String lastName;
+    private String forNavn;
+    private String efterNavn;
     private String email;
 
     private String forslag;
@@ -14,10 +14,10 @@ public class Madkassen
 
 
     // Constructer.
-    public Madkassen( String firstName, String lastName, String email, String forslag, String forbrugeren, String virksomhed, String organisation)
+    public Madkassen( String forNavn, String efterNavn, String email, String forslag, String forbrugeren, String virksomhed, String organisation)
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.forNavn = forNavn;
+        this.efterNavn = efterNavn;
         this.email = email;
         this.forslag = forslag;
         this.forbrugeren = forbrugeren;
@@ -26,8 +26,8 @@ public class Madkassen
     }
 
     // Getter.
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
+    public String getForNavn() { return forNavn; }
+    public String getEfterNavn() { return efterNavn; }
     public String getEmail() { return email; }
     public String getForslag() { return forslag; }
     public String getForbrugeren() { return forbrugeren; }

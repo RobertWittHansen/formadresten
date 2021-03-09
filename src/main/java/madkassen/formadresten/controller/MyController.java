@@ -49,7 +49,7 @@ public class MyController
 
     // postmapping sender "dit" tavleopslag videre.
     @PostMapping("/tavleopslag")
-    public String tavleopslag(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname,
+    public String tavleopslag(@RequestParam("forNavn") String forNavn, @RequestParam("efterNavn") String efterNavn,
                               @RequestParam("email") String email, @RequestParam("forslag") String forslag)
     {
 
