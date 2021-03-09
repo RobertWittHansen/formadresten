@@ -6,7 +6,7 @@ public class Madkassen
     private String lastName;
     private String email;
 
-    private String opslagstavlen;
+    private String forslag;
 
     private String forbrugeren;
     private String virksomhed;
@@ -14,12 +14,12 @@ public class Madkassen
 
 
     // Constructer.
-    public Madkassen( String firstName, String lastName, String email, String opslagstavlen, String forbrugeren, String virksomhed, String organisation)
+    public Madkassen( String firstName, String lastName, String email, String forslag, String forbrugeren, String virksomhed, String organisation)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.opslagstavlen = opslagstavlen;
+        this.forslag = forslag;
         this.forbrugeren = forbrugeren;
         this.virksomhed = virksomhed;
         this.organisation = organisation;
@@ -29,7 +29,7 @@ public class Madkassen
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
     public String getEmail() { return email; }
-    public String getOpslagstavlen() { return opslagstavlen; }
+    public String getForslag() { return forslag; }
     public String getForbrugeren() { return forbrugeren; }
     public String getVirksomhed() { return virksomhed; }
     public String getOrganisation() { return organisation; }
