@@ -56,7 +56,7 @@ public class MyController
                        @RequestParam("email") String email, @RequestParam("date") String date,
                        @RequestParam("postname") String postname, @RequestParam("postarea") String postarea)
     {
-        GetSetClass dashboardarray = new GetSetClass(firstname,lastname,email,postname,postarea);
+        GetSetClass dashboardarray = new GetSetClass(firstname,lastname,email,date,postname,postarea);
         dashboard.add(dashboardarray);
         return  "redirect:/succes";
     }

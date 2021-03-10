@@ -5,6 +5,7 @@ public class GetSetClass
     private String firstname;
     private String lastname;
     private String email;
+    private String date;
     private String postname;
     private String postarea;
 
@@ -12,12 +13,13 @@ public class GetSetClass
 
 
     // Constructer.
-    public GetSetClass(String firstname, String lastname, String email,
-                       String postname, String post)
+    public GetSetClass(String firstname, String lastname, String email, String date,
+                       String postname, String postarea)
     {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
+        this.date = date;
         this.postname = postname;
         this.postarea = postarea;
 
