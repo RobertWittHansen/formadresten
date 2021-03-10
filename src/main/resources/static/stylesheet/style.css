@@ -12,11 +12,7 @@ body{
     background-size: cover;
     background-position: center;
     color: whitesmoke;
-
-
 }
-
-
 
 .flex-container{
     display:inline-flex;
@@ -53,6 +49,15 @@ body{
 
 
 /*--- Error Start ---*/
+
+#error{
+    background-image: url("../img/funny-3d-wallpaper-6.jpg");
+    padding: 300px 100px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
 
 
 /*--- Error Slut ---*/
