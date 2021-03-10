@@ -3,6 +3,7 @@ package madkassen.formadresten.controller;
 
 import madkassen.formadresten.model.GetSetClass;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class MyController
 {
 
-    ArrayList<GetSetClass> dashboard = new ArrayList<>();
+    ArrayList<GetSetClass> dashboardList = new ArrayList<>();
     // Main site.
     @GetMapping("/index")
     public String index()
@@ -57,22 +58,25 @@ public class MyController
                        @RequestParam("postname") String postname, @RequestParam("postarea") String postarea)
     {
         GetSetClass dashboardarray = new GetSetClass(firstname,lastname,email,date,postname,postarea);
-        dashboard.add(dashboardarray);
+        dashboardList.add(dashboardarray);
         return  "redirect:/succes";
     }
 
     // griber det omdrigeret opslag, så brugeren kan se det.
     @GetMapping("/succes")
-    public String succes()
+    public String succes(Model model)
     {
+        model.addAttribute("dashboard",  dashboardList.get(dashboardList.size()-1));
+
         return "succes";
     }
 
 
     // Selve opslagstavlen (dashboardet).
     @GetMapping("/dashboard")
-    public String dashboard()
+    public String dashboard(Model model)
     {
+        model.addAttribute("dashboardarray", dashboardList);
         return "dashboard";
     }
 }

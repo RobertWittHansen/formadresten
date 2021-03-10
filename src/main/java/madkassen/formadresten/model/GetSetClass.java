@@ -9,9 +9,6 @@ public class GetSetClass
     private String postname;
     private String postarea;
 
-
-
-
     // Constructer.
     public GetSetClass(String firstname, String lastname, String email, String date,
                        String postname, String postarea)
@@ -22,21 +19,16 @@ public class GetSetClass
         this.date = date;
         this.postname = postname;
         this.postarea = postarea;
-
-
     }
 
     // Getters.
 
-
     public String getFirstname() {
         return firstname;
     }
-
     public String getLastname() {
         return lastname;
     }
-
     public String getEmail() {
         return email;
     }
@@ -46,7 +38,5 @@ public class GetSetClass
     public String getPostarea() {
         return postarea;
     }
-
-
     }
 
