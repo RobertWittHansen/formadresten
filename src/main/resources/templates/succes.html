@@ -6,34 +6,30 @@
 </head>
 <body>
 <header>
-    <h1>For Mad'Resten</h1>
-    <nav>
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="opslagstavlen">opslagstavlen</a></li>
-        </ul>
-    </nav>
+    <h1>
+        For Mad'Resten
+    </h1>
+        <nav>
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="form">Skriv et opslag</a></li>
+                <li><a href="dashboard">opslagstavlen</a></li>
+            </ul>
+        </nav>
     <hr>
-
-    <h2>Succes☺</h2>
-    <p>Deres forslag er kommet på opslagstavlen.</p>
+    <div id="succestext">
+        <h2>Succes☺</h2>
+        <h3>Deres forslag er kommet på opslagstavlen.</h3>
+    </div>
 </header>
-    <section id="dashboardposts">
-        <p th:text="${dashboardposts.getFirstname()}"></p>
-        <p th:text="${dashboardposts.getLastname()}"></p>
-        <p th:text="${dashboardposts.getEmail()}"></p>
-        <p th:text="${dashboardposts.getDate()}"></p>
-        <p th:text="${dashboardposts.getPostname()}"></p>
-        <p th:text="${dashboardposts.getPostarea()}"></p>
+    <section id="submitformsucces">
+        <p th:text="${'Fornavn: ' + dashboard.getFirstname()}"></p>
+        <p th:text="${'Efternavn: ' + dashboard.getLastname()}"></p>
+        <p th:text="${'Email adresse: ' + dashboard.getEmail()}"></p>
+        <p th:text="${'Dato for opslag: ' + dashboard.getDate()}"></p>
+        <p th:text="${'Overskrift: ' + dashboard.getPostname()}"></p>
+        <p th:text="${'Forslag: ' + dashboard.getPostarea()}"></p>
     </section>
-
-
-
-
-
-
-
 
 <hr>
 <footer>
@@ -41,12 +37,12 @@
         <ul>
             <li><a href="index">Home</a></li>
             <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="opslagstavlen">opslagstavlen</a></li>
+            <li><a href="dashboard">Opslagstavlen</a></li>
         </ul>
     </nav>
     <hr>  <!-- Defines a thematic change in the content -->
     <div>  <!-- 	Defines a section in a document -->
-        <p align="center">Copyright ☺ (c) ☺ 2021 All rights reserved. Mathias - Jesper - Robert.</p>
+        <p align="center">••••• Copyright ☺ 2021 All rights reserved - Mathias • Jesper • Robert •••••</p>
     </div>
 </footer>
 </body>

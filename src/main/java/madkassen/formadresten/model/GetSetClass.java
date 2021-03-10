@@ -29,14 +29,9 @@ public class GetSetClass
     public String getLastname() {
         return lastname;
     }
-    public String getEmail() {
-        return email;
-    }
-    public String getPostname() {
-        return postname;
-    }
-    public String getPostarea() {
-        return postarea;
-    }
+    public String getEmail() { return email; }
+    public String getDate(){ return date; }
+    public String getPostname() { return postname; }
+    public String getPostarea() { return postarea; }
     }
 
