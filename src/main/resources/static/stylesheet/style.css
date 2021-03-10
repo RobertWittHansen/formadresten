@@ -1,8 +1,13 @@
 
 /*--- Main Body Start ---*/
 
+.flex-container{
+    display:inline-flex;
+}
 
-
+.nav ul {
+    display:inline;
+}
 
 /*--- Main Body Slut  ---*/
 
