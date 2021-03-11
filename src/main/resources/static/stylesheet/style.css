@@ -18,6 +18,8 @@ header {
 <!-- for the top block -->
     width: 100%;
     display: block;
+
+
 }
 header nav {
     display: flex;
@@ -30,8 +32,6 @@ header nav a {
     text-decoration: none;
     color: whitesmoke;
 }
-
-
 
 
 
@@ -98,13 +98,15 @@ footer nav a{
 
 /*--- Error Start ---*/
 
-#error{
+#error header nav{
     background-image: url("../img/funny-3d-wallpaper-6.jpg");
-    padding: 300px 100px;
+    padding: 500px 100px;
     margin: 20px;
     background-size: cover;
     background-position: center;
     color: black;
+
+
 }
 
 
