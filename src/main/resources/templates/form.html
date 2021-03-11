@@ -19,19 +19,24 @@
         <h2>Deres forslag</h2>
     </header>
     <form action="/submitform" method="post">
-        <ul>
-        <li><label for="firstname">Fornavn</label></li>
-            <input type="text" name="firstname" id="firstname">
-        <li><label for="lastname">Efternavn</label></li>
-            <input type="text" name="lastname" id="lastname">
-        <li><label for="email">Email adresse</label></li>
-            <input type="email" name="email" id="email">
-        <li><label for="date">Dato</label></li>
-            <input type="date" id="date" name="date">
-        <li><label for="postname">Overskrift på forslaget</label></li>
-            <input type="text" name="postname" id="postname">
-        <li><label for="postarea">Deres forslag <small>(skal overholde givne regler for forslag til opslagstavlen)</small></label> </li>
-            <textarea name="postarea" id="postarea" cols="80" rows="10">Skriv deres forslag her:</textarea>
+        <ul> <!-- firstnames and larstnames -->
+            <li><label for="firstname">Fornavn</label></li>
+                <input type="text" name="firstname" id="firstname">
+            <li><label for="lastname">Efternavn</label></li>
+                <input type="text" name="lastname" id="lastname">
+            <!-- email -->
+            <li><label for="email">Email adresse</label></li>
+                <input type="email" name="email" id="email">
+            <!-- date -->
+            <li><label for="date">Dato</label></li>
+                <input type="date" id="date" name="date">
+            <!-- postname -->
+            <li><label for="postname">Overskrift på forslaget</label></li>
+                <input type="text" name="postname" id="postname">
+            <!-- textarea -->
+            <li><label for="postarea">Deres forslag <small>(skal overholde givne regler for forslag til opslagstavlen)</small></label> </li>
+            <textarea name="postarea" id="postarea" cols="80" rows="10">Skriv deres forslag her:</textarea><br>
+            <!-- button -->
             <input type="submit" name="submit" id="submit">
         </ul>
     </form>

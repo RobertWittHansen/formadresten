@@ -9,6 +9,10 @@ body{
     background-position: center;
     color: whitesmoke;
 }
+body section a{
+    color: whitesmoke;
+}
+
 
 header {
 <!-- for the top block -->
