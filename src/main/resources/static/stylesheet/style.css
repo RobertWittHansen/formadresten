@@ -3,7 +3,6 @@
 
 body{
     background-image: url("../img/formanresten1.jpg");
-
     padding: 100px 100px;
     margin: 25px;
     background-size: cover;
@@ -11,15 +10,71 @@ body{
     color: whitesmoke;
 }
 
-.flex-container{
-    display:inline-flex;
+header {
+<!-- for the top block -->
+    width: 100%;
+    display: block;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav ul {
-    display:inline;
+header nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    display: block;
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/*
+footer {
+    display: inline-block;
+    float: bottom;
+    width: 100%;
+}
+
+
 
 /*--- Main Body Slut  ---*/
+
 
 /*------------------------------------------------------------------------*/
 
@@ -90,6 +145,36 @@ body{
 
 
 /*--- Organisation Slut ---*/
+
+
+
+
+
+/*
+.flex-container{
+    display:inline-flex;
+}
+
+.nav ul {
+    display:inline;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+header nav a:hover {
+    color: snow;
+    background-color: black;
+ */
 
 
 
