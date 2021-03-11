@@ -43,13 +43,12 @@ header nav a {
 
 
 
-
-
-
-footer{
+footer {
+    display: inline-block;
+    float: bottom;
     width: 100%;
-    display: block;
 }
+
 footer nav {
     display: flex;
     justify-content: center;
@@ -63,13 +62,6 @@ footer nav a{
 }
 
 
-
-/*
-footer {
-    display: inline-block;
-    float: bottom;
-    width: 100%;
-}
 
 
 
@@ -160,23 +152,16 @@ footer {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
 /*
 header nav a:hover {
     color: snow;
     background-color: black;
  */
 
-
-
-
+/*
+footer{
+    width: 100%;
+    display: block;
+}
+*/
 

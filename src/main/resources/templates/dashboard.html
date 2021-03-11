@@ -2,44 +2,49 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
     <title>opslagstavlen</title>
 </head>
-<body>
-<header>
-    <h1>For Mad'Resten</h1>
-    <nav>
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="dashboard">opslagstavlen</a></li>
-        </ul>
-    </nav>
-    <hr>
+<body id="dashboard">
+    <header>
+        <h1>For Mad'Resten</h1>
+        <nav>
+            <a href="index">Home</a>
+            <a href="form">Skriv et opslag</a>
+            <a href="dashboard">opslagstavlen</a>
+        </nav>
+        <hr>
+        <h2>Opslagstavlen</h2>
+    </header>
 
-    <h2>Opslagstavlen</h2>
-</header>
-<h2>Your dashboard</h2>
-<div th:each="dashboard : ${dashboardposts}">
-    <p th:text="${dashboard.getPostname()}"></p>
-    <p th:text="${dashboard.getFirstname()}"></p>
-    <p th:text="${dashboard.getLastname()}"></p>
-    <p th:text="${dashboard.getDate()}"></p>
-    <p th:text="${dashboard.getPostarea()}"></p>
-</div>
-<hr>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="dashboard">opslagstavlen</a></li>
-        </ul>
-    </nav>
-    <hr>  <!-- Defines a thematic change in the content -->
-    <div>  <!-- 	Defines a section in a document -->
-        <small><p align="center">•  Copyright ☺ 2021 All rights reserved - Mathias - Jesper - Robert  •</p></small>
+
+
+
+
+    <h2>Your dashboard</h2>
+    <div th:each="dashboard : ${dashboardposts}">
+        <p th:text="${dashboard.getPostname()}"></p>
+        <p th:text="${dashboard.getFirstname()}"></p>
+        <p th:text="${dashboard.getLastname()}"></p>
+        <p th:text="${dashboard.getDate()}"></p>
+        <p th:text="${dashboard.getPostarea()}"></p>
     </div>
-</div>
-</footer>
+
+
+
+
+    <hr>
+    <footer>
+        <nav>
+            <a href="index">Home</a>
+            <a href="form">Skriv et opslag</a>
+            <a href="dashboard">opslagstavlen</a>
+        </nav>
+        <hr>  <!-- Defines a thematic change in the content -->
+        <div>  <!-- 	Defines a section in a document -->
+            <small><p align="center">•  Copyright ☺ 2021 All rights reserved - Mathias - Jesper - Robert  •</p></small>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
