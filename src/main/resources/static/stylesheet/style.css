@@ -2,11 +2,8 @@
 /*--- Main Body Start ---*/
 
 body{
-    /*background-image: url("../img/formanresten1.jpg");*/
-    /*background-image: url("../img/formadresten2.jpg");*/
-    /*background-image: url("../img/formadresten3.jpg");*/
-    /*background-image: url("../img/formasresten4.jpg");*/
-    background-image: url("../img/formadresten5.jpg");
+    background-image: url("../img/formanresten1.jpg");
+
     padding: 100px 100px;
     margin: 25px;
     background-size: cover;
