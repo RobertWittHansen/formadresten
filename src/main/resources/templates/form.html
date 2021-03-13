@@ -2,66 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
     <title>form</title>
 </head>
 <body id="form">
 
-    <header>
-        <h1 align="center"> For Mad'Resten</h1>
-        <nav>
-            <a href="index">Home</a>
-            <a href="form">Skriv et opslag</a>
-            <a href="dashboard">opslagstavlen</a>
-        </nav>
-        <hr>
-        <h2>Deres forslag</h2>
+    <header class="fixed-header">
+    <h1 align="center"> For Mad'Resten</h1>
+    <hr>
+    <nav>
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">opslagstavlen</a>
+    </nav>
+    <hr>
+    <h2>Deres forslag</h2>
     </header>
 
-    <form action="/submitform" method="post">
-        <ul> <!-- firstnames and larstnames -->
-            <li><label for="firstname">Fornavn</label></li>
+
+    <main class="pad-form">
+
+        <form action="/submitform" method="post" >
+            <ul> <!-- firstnames and larstnames -->
+                <li><label for="firstname">Fornavn</label></li>
                 <input type="text" name="firstname" id="firstname">
-            <li><label for="lastname">Efternavn</label></li>
+                <li><label for="lastname">Efternavn</label></li>
                 <input type="text" name="lastname" id="lastname">
-            <!-- email -->
-            <li><label for="email">Email adresse</label></li>
+                <!-- email -->
+                <li><label for="email">Email adresse</label></li>
                 <input type="email" name="email" id="email">
-            <!-- date -->
-            <li><label for="date">Dato</label></li>
+                <!-- date -->
+                <li><label for="date">Dato</label></li>
                 <input type="date" id="date" name="date">
-            <!-- postname -->
-            <li><label for="postname">Overskrift på forslaget</label></li>
+                <!-- postname -->
+                <li><label for="postname">Overskrift på forslaget</label></li>
                 <input type="text" name="postname" id="postname">
-            <!-- textarea -->
-            <li><label for="postarea">Deres forslag <small>(skal overholde givne regler for forslag til opslagstavlen)</small></label> </li>
-            <textarea name="postarea" id="postarea" cols="80" rows="10">Skriv deres forslag her:</textarea><br>
-            <!-- button -->
-            <input type="submit" name="submit" id="submit">
-        </ul>
-    </form>
+                <!-- textarea -->
+                <li><label for="postarea">Deres forslag <small>(skal overholde givne regler for forslag til opslagstavlen)</small></label> </li>
+                <textarea name="postarea" id="postarea" cols="80" rows="10">Skriv deres forslag her:</textarea><br>
+                <!-- button -->
+                <input type="submit" name="submit" id="submit">
+            </ul>
+        </form>
+
+    </main>
 
 
 
-
-
-
-
-
-
-
-
+    <footer class="fixed-footer">
     <hr>
-    <footer>
-        <nav>
-            <a href="index">Home</a>
-            <a href="form">Skriv et opslag</a>
-            <a href="dashboard">opslagstavlen</a>
-        </nav>
-        <hr>  <!-- Defines a thematic change in the content - eller en streg som det også kaldes ☺ -->
-        <div id="footer-texta">  <!-- 	Defines a section in a document -->
-            <p align="center">••••• Copyright ☺ 2021 All rights reserved - Mathias • Jesper • Robert •••••</p>
-        </div>
+    <nav>
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">opslagstavlen</a>
+    </nav>
+    <hr>  <!-- Defines a thematic change in the content - eller en streg som det også kaldes ☺ -->
+    <div id="footer-texta">  <!-- 	Defines a section in a document -->
+        <p align="center">••••• Copyright ☺ 2021 All rights reserved - Mathias • Jesper • Robert •••••</p>
+    </div>
     </footer>
 </body>
 </html>
