@@ -31,8 +31,9 @@ header.header-nav a{
 }
 .flex-box2{
     display: flex;
+    position: -ms-device-fixed;
     flex-direction: row;
-    flot: right;
+
 }
 .consumer-section{
 
