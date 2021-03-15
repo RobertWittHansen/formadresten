@@ -1,171 +1,78 @@
-
-/*--- Main Body Start ---*/
-
-body{
+.body{
     background-image: url("../img/formanresten1.jpg");
-    padding: 100px 100px;
-    margin: 25px;
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-}
-body section a{
-    color: whitesmoke;
+    size: 1000px;
 }
 
-
-header {
-<!-- for the top block -->
+.header{
+    position: sticky;
+    height: 150px;
+    position: fixed;
     width: 100%;
+    top: 0px;
+
+}
+header.header{
+    text-align: center;
+    color: cornsilk;
+    font-family: "Lucida Console";
+    font-size: 20px;
+}
+header.header-nav a{
     display: block;
+    direction: rtl;
+    text-align: justify;
+    color: cornsilk;
 }
-header nav {
+.flex-box p{
+    margin-top: 4rem;
+    color: cornsilk;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%
+}
+.flex-box2{
+    display: flex;
+    flex-direction: row;
+    flot: right;
+}
+.consumer-section{
+
+    text-align: left;
+    color: cornsilk;
+    width: 220px;
+}
+.consumer-section p{
+    margin: -1rem
 }
 
-header nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: whitesmoke;
+.organisation-section{
+    text-align: right;
+    color: cornsilk;
+    width: 190px;
+}
+.organisation-section p{
+    margin: -1rem
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    display: inline-block;
-    float: bottom;
+.company-section{
+    text-align: center;
+    color: cornsilk;
+    width: 290px;
+    margin-top: 34px;
+}
+.company-section p{
+    margin: -1rem
+}
+.footer-nav a{
+    position: sticky;
+    color: cornsilk;
+    text-align: center;
+    height: 86px;
+    bottom: 0px;
     width: 100%;
 }
-
-footer nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer p{
+    color: cornsilk;
+    text-align: center;
 }
 
-footer nav a{
-    padding: 10px;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-
-
-
-
-/*--- Main Body Slut  ---*/
-
-
-/*------------------------------------------------------------------------*/
-
-/*--- index Start ---*/
-
-
-/*--- index  Slut ---*/
-
-/*------------------------------------------------------------------------*/
-
-/*--- Form Start ---*/
-
-
-/*--- form Slut ---*/
-
-/*------------------------------------------------------------------------*/
-
-/*--- Succes Start ---*/
-
-
-/*--- Succes Slut ---*/
-
-/*------------------------------------------------------------------------*/
-
-
-/*--- Error Start ---*/
-
-#error{
-    background-image: url("../img/funny-3d-wallpaper-6.jpg");
-    padding: 300px 100px;
-    margin: 20px;
-    background-size: cover;
-    background-position: center;
-    color: black;
-}
-
-
-/*--- Error Slut ---*/
-
-
-/*------------------------------------------------------------------------*/
-
-/*--- Dashboard  Start ---*/
-
-
-/*--- Dashboard  Slut ---*/
-
-/*------------------------------------------------------------------------*/
-
-/*--- Comsumer Start ---*/
-
-
-/*--- Comsumer Slut ---*/
-
-
-/*------------------------------------------------------------------------*/
-
-
-/*--- Company Start ---*/
-
-
-/*--- Company Slut ---*/
-
-/*------------------------------------------------------------------------*/
-
-
-/*--- Organisation Start ---*/
-
-
-/*--- Organisation Slut ---*/
-
-
-
-
-
-/*
-.flex-container{
-    display:inline-flex;
-}
-
-.nav ul {
-    display:inline;
-}
-*/
-
-/*
-header nav a:hover {
-    color: snow;
-    background-color: black;
- */
-
-/*
-footer{
-    width: 100%;
-    display: block;
-}
-*/
-
+X

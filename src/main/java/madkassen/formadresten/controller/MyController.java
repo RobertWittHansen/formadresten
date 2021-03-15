@@ -22,7 +22,7 @@ public class MyController
     {
         return "index";
     }
-/*
+
     // Statisk info til bruger.
     @GetMapping("/consumer")
     public String consumer()
@@ -44,8 +44,6 @@ public class MyController
         return "organisation";
     }
 
-
- */
     // Koden til: profil, opslagstavlen.
     @GetMapping("/form")
     public String form()
@@ -55,12 +53,12 @@ public class MyController
 
     // postmapping sender "dit" tavleopslag videre.
     @PostMapping("/submitform")
-    public String submitform(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname,
+    public String post(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname,
                        @RequestParam("email") String email, @RequestParam("date") String date,
                        @RequestParam("postname") String postname, @RequestParam("postarea") String postarea)
     {
-        GetSetClass dashboardlist = new GetSetClass(firstname,lastname,email,date,postname,postarea);
-        dashboardList.add(dashboardlist);
+        GetSetClass dashboardarray = new GetSetClass(firstname,lastname,email,date,postname,postarea);
+        dashboardList.add(dashboardarray);
         return  "redirect:/succes";
     }
 
@@ -69,6 +67,7 @@ public class MyController
     public String succes(Model model)
     {
         model.addAttribute("dashboard",  dashboardList.get(dashboardList.size()-1));
+
         return "succes";
     }
 
