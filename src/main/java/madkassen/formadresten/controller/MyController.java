@@ -80,4 +80,16 @@ public class MyController
         model.addAttribute("dashboardposts", dashboardList);
         return "dashboard";
     }
+    @GetMapping("/consumer")
+    public String consumer(){
+        return "consumer";
+    }
+    @GetMapping("/company")
+    public String company(){
+        return "company";
+    }
+    @GetMapping("organisation")
+    public String organisation(){
+        return "organisation";
+    }
 }
