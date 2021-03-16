@@ -72,7 +72,8 @@ header nav a{
     width: 200px;
     flex-grow:1;
 }
-.organisation-section p{
+#dashboard-page{
+    color: cornsilk;
 }
 #foot{
     position: center;

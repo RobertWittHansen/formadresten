@@ -6,16 +6,25 @@
     <title>Opslagstavlen</title>
 </head>
 <body class="dashboard">
-<header>
-    <h1>For'Mad'resten.!</h1>
+<header class="header">
+    <h1>
+        For Mad'Resten!
+    </h1>
+    <h3>Frontlinien i kampen mod madspild..</h3>
+    <hr>
     <nav>
         <a href="index">Home</a>
         <a href="form">Skriv et opslag</a>
         <a href="dashboard">Opslagstavlen</a>
     </nav>
     <hr>
-    <h2>Opslagstavlen</h2>
 </header>
+<div id="dashboard-page">
+    <h1>
+        OpslagsTavlen..
+    </h1>
+    <p>Samlingsstedet for gode ideer til en bedre udnyttelse af vores alles fødevarer</p>
+</div>
 <div th:each="dashboard : ${dashboardposts}">
     <p th:text="${dashboard.getPostname()}"></p>
     <p th:text="${dashboard.getFirstname()}"></p>
@@ -23,16 +32,18 @@
     <p th:text="${dashboard.getDate()}"></p>
     <p th:text="${dashboard.getPostarea()}"></p>
 </div>
-<hr>
-<footer class="footer">
+<footer id="foot">
     <hr>
-    <nav class="footer-nav">
+    <nav>
         <a href="index">Home</a>
         <a href="form">Skriv et opslag</a>
         <a href="dashboard">Opslagstavlen</a>
     </nav>
     <hr>
-    <p>•  • Copyright ☺ 2021 • All rights reserved • Mathias - Jesper - Robert •  •</p>
+
+    <div id="foot-text">
+        <p>•  • Copyright ☺ 2021 • All rights reserved • Mathias - Jesper - Robert •  •</p>
+    </div>
 </footer>
 </body>
 </html>
