@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stylesheet/style.css">
-    <title>opslagstavlen</title>
+    <title>Opslagstavlen</title>
 </head>
-<body>
+<body class="dashboard">
 <header>
-    <h1>For Mad'Resten</h1>
+    <h1>For'Mad'resten.!</h1>
     <nav>
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="dashboard">opslagstavlen</a></li>
-        </ul>
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">Opslagstavlen</a>
     </nav>
     <hr>
-
     <h2>Opslagstavlen</h2>
 </header>
-<h2>Your dashboard</h2>
 <div th:each="dashboard : ${dashboardposts}">
     <p th:text="${dashboard.getPostname()}"></p>
     <p th:text="${dashboard.getFirstname()}"></p>
@@ -28,19 +24,15 @@
     <p th:text="${dashboard.getPostarea()}"></p>
 </div>
 <hr>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="form">Skriv et opslag</a></li>
-            <li><a href="dashboard">opslagstavlen</a></li>
-        </ul>
+<footer class="footer">
+    <hr>
+    <nav class="footer-nav">
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">Opslagstavlen</a>
     </nav>
-    <hr>  <!-- Defines a thematic change in the content -->
-    <div>  <!-- 	Defines a section in a document -->
-        <small><p align="center">•  Copyright ☺ 2021 All rights reserved - Mathias - Jesper - Robert  •</p></small>
-    </div>
-</div>
+    <hr>
+    <p>•  • Copyright ☺ 2021 • All rights reserved • Mathias - Jesper - Robert •  •</p>
 </footer>
 </body>
 </html>

@@ -1,79 +1,69 @@
-.body{
+body{
     background-image: url("../img/formanresten1.jpg");
-    size: 1000px;
+    size: 800px;
 }
 
-.header{
-    position: sticky;
-    height: 150px;
-    position: fixed;
-    width: 100%;
-    top: 0px;
+header{
 
-}
-header.header{
+    display: block;
+    direction: initial;
     text-align: center;
-    color: cornsilk;
+
     font-family: "Lucida Console";
     font-size: 20px;
 }
-header.header-nav a{
-    display: block;
-    direction: rtl;
+header nav a{
+    display: contents;
     text-align: justify;
     color: cornsilk;
 }
-.flex-box p{
-    margin-top: 4rem;
+flex-box p{
+    display: flex;
+    width: 95%;
+    text-align: center;
+    margin-top: 2rem;
     color: cornsilk;
-    display: flex;
-    width: 100%
+
+
+
 }
-.flex-box2{
+flex-box2{
     display: flex;
-    position: -ms-device-fixed;
-    flex-direction: row;
+    width: 100%;
+    position: relative;
 
 }
 .consumer-section{
 
     text-align: left;
     color: cornsilk;
-    width: 220px;
+    width: 200px;
+    padding: 2rem;
 }
 .consumer-section p{
-    margin: -1rem
+
 }
 
 .organisation-section{
     text-align: right;
     color: cornsilk;
-    width: 190px;
+    padding: 2rem;
+    width: 200px;
 }
 .organisation-section p{
-    margin: -1rem
 }
-
 .company-section{
     text-align: center;
+    padding: 2rem;
     color: cornsilk;
-    width: 290px;
-    margin-top: 34px;
 }
 .company-section p{
-    margin: -1rem
 }
-.footer-nav a{
-    position: sticky;
-    color: cornsilk;
+nav a{
     text-align: center;
-    height: 86px;
-    bottom: 0px;
-    width: 100%;
-}
-.footer p{
     color: cornsilk;
-    text-align: center;
 }
-
-X
+p{
+    text-align: center;
+    color: cornsilk;
+}

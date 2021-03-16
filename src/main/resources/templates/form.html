@@ -5,19 +5,22 @@
     <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
     <title>form</title>
 </head>
-<body id="form">
+<body class="form">
 
-    <header>
-        <h1>For Mad'Resten</h1>
-        <nav>
-            <a href="index">Home</a>
-            <a href="form">Skriv et opslag</a>
-            <a href="dashboard">opslagstavlen</a>
-        </nav>
-        <hr>
+<header class="header">
+    <h1>
+        For Mad'Resten!
+    </h1>
+    <h3>Frontlinien i kampen mod madspild..</h3>
+    <hr>
 
-        <h2>Deres forslag</h2>
-    </header>
+    <nav class="header-nav">
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">Opslagstavlen</a>
+    </nav>
+    <hr>
+</header>
     <form action="/submitform" method="post">
         <ul> <!-- firstnames and larstnames -->
             <li><label for="firstname">Fornavn</label></li>
@@ -52,16 +55,15 @@
 
 
     <hr>
-    <footer>
-        <nav>
-            <a href="index">Home</a>
-            <a href="form">Skriv et opslag</a>
-            <a href="dashboard">opslagstavlen</a>
-        </nav>
-        <hr>  <!-- Defines a thematic change in the content - eller en streg som det også kaldes ☺ -->
-        <div id="footer-texta">  <!-- 	Defines a section in a document -->
-            <p align="center">••••• Copyright ☺ 2021 All rights reserved - Mathias • Jesper • Robert •••••</p>
-        </div>
-    </footer>
+<footer class="footer">
+    <hr>
+    <nav class="footer-nav">
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">Opslagstavlen</a>
+    </nav>
+    <hr>
+    <p>•  • Copyright ☺ 2021 • All rights reserved • Mathias - Jesper - Robert •  •</p>
+</footer>
 </body>
 </html>
