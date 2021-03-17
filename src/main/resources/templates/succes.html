@@ -8,23 +8,19 @@
 
 
 
-<body>
-<header>
+<body class="succes-body">
+<header class="header">
     <h1>
-        For Mad'Resten
+        For Mad'Resten!
     </h1>
-        <nav>
-            <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="form">Skriv et opslag</a></li>
-                <li><a href="dashboard">opslagstavlen</a></li>
-            </ul>
-        </nav>
+    <h3>Frontlinien i kampen mod madspild..</h3>
     <hr>
-    <div id="succestext">
-        <h2>Succes☺</h2>
-        <h3>Deres forslag er kommet på opslagstavlen.</h3>
-    </div>
+    <nav>
+        <a href="index">Home</a>
+        <a href="form">Skriv et opslag</a>
+        <a href="dashboard">Opslagstavlen</a>
+    </nav>
+    <hr>
 </header>
     <section id="submitformsucces">
         <p th:text="${'Fornavn: ' + dashboard.getFirstname()}"></p>

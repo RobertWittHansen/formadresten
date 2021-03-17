@@ -23,7 +23,9 @@ header nav{
 header nav a{
     flex-grow:1;
     color: cornsilk;
+
 }
+
 .flex-box p{
     display: flex;
     width: 89%;
